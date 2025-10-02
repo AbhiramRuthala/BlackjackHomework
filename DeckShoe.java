@@ -18,6 +18,13 @@ public class DeckShoe {
 
         } else if(numDecks > 0){
             this.decks = new Deck[numDecks];
+            for(int i =0; i<numDecks; i++) {
+                if(decks[i] == null){
+                    
+                } else {
+                    this.decks[i] = new Deck();
+                }
+            }
         }
 
 //        this.decks = numDecks;
