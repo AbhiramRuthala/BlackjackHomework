@@ -41,7 +41,7 @@ public class DeckShoe {
     //to reshuffle all the decks and start over again
     public Card dealTopCard() {
         Card sense = new Card();
- 
+
         //Card sense  = new Card();
         //Card hand = new Card();
         for(int i = 0; i < decks.length; i++) {
@@ -63,7 +63,7 @@ public class DeckShoe {
                 decks[i].restockDeck();
             }
 
-            //return sense;
+            return sense;
 
             //return hand;
             //return sense[i];
@@ -74,7 +74,7 @@ public class DeckShoe {
 //            return sense[j];
 //        }
 //
-        return sense;
+        return dealTopCard();
 
     }
 
