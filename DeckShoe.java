@@ -65,7 +65,7 @@ public class DeckShoe {
 //            return sense[j];
 //        }
 //
-        return sense[0];
+        return sense[decks.length-1];
 
     }
 
