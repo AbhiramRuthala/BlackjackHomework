@@ -14,16 +14,12 @@ public class DeckShoe {
     //adds them to the list of decks
     public DeckShoe(int numDecks) {
         //his.decks = numDecks > 0 ? new Deck[decks.length + numDecks] : null;
-        if(numDecks == 0){
-
-        } else if(numDecks > 0){
+        if(numDecks <= 0){
+            this.decks = new Deck[0];
+        } else {
             this.decks = new Deck[numDecks];
-            for(int i =0; i<numDecks; i++) {
-                if(decks[i] == null){
-                    
-                } else {
-                    this.decks[i] = new Deck();
-                }
+            for(int i=0; i<numDecks; i++) {
+                this.decks[i] = new Deck();
             }
         }
 
