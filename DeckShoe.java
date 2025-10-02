@@ -15,11 +15,11 @@ public class DeckShoe {
     public DeckShoe(int numDecks) {
         //his.decks = numDecks > 0 ? new Deck[decks.length + numDecks] : null;
         if(numDecks == 0){
-            
+
         } else if(numDecks > 0){
             this.decks = new Deck[numDecks];
         }
-        
+
 //        this.decks = numDecks;
 //        decks. += numDecks;
 
@@ -58,7 +58,7 @@ public class DeckShoe {
 //            return sense[j];
 //        }
 //
-//        return sense[0];
+        return sense[0];
 
     }
 
