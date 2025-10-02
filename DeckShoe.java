@@ -14,7 +14,12 @@ public class DeckShoe {
     //adds them to the list of decks
     public DeckShoe(int numDecks) {
         //his.decks = numDecks > 0 ? new Deck[decks.length + numDecks] : null;
-        this.decks = new Deck[numDecks];
+        if(numDecks == 0){
+            
+        } else if(numDecks > 0){
+            this.decks = new Deck[numDecks];
+        }
+        
 //        this.decks = numDecks;
 //        decks. += numDecks;
 
@@ -31,8 +36,10 @@ public class DeckShoe {
         for(int i = 0; i < decks.length; i++) {
             if(decks[i] != null) {
                 sense[i] = decks[i].dealTopCard();
+                //return sense[i];
             } else {
                 sense[i] = null;
+                //return sense[i];
             }
 
             if(decks[i] != null && decks[i].cardsLeft() == 0) {
@@ -47,11 +54,11 @@ public class DeckShoe {
 
         }
 
-        for(int j = 0; j < decks.length; j++) {
-            return sense[j];
-        }
-
-        return sense[0];
+//        for(int j = 0; j < decks.length; j++) {
+//            return sense[j];
+//        }
+//
+//        return sense[0];
 
     }
 
