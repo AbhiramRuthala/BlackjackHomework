@@ -4,6 +4,11 @@
  *   and implementing the 3 abstract methods.
  */
 
+// Name: Abhiram Ruthala
+// Computing ID: kas4kj@virginia.edu
+// Homework Name: Homework 4 - BlackJack
+// Resources used: ChatGPT 5 for debugging
+
 import java.util.*;
 
 public class MyBlackjackPlayer extends BlackjackPlayer{
