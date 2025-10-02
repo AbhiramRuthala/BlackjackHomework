@@ -40,16 +40,17 @@ public class DeckShoe {
     //Important: if you've dealt the last card in all the decks, you'll want
     //to reshuffle all the decks and start over again
     public Card dealTopCard() {
-        Card[] sense = new Card[decks.length];
+        Card sense = new Card();
+        //Card sense  = new Card();
         //Card hand = new Card();
         for(int i = 0; i < decks.length; i++) {
             if(decks[i] != null) {
-                sense[0] = decks[i].dealTopCard();
+                sense = decks[i].dealTopCard();
 //                hand = decks[i].dealTopCard();
 //                return hand;
                 //return sense[i];
             } else {
-                sense[i] = null;
+                sense = null;
                 //return sense[i];
             }
 
@@ -65,6 +66,14 @@ public class DeckShoe {
             //return sense[i];
 
         }
+
+//        for(int j = 0; j < decks.length; j++) {
+//            return sense[j];
+//        }
+//
+        return dealTopCard();
+
+    }
 
 //        for(int j = 0; j < decks.length; j++) {
 //            return sense[j];
