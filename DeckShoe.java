@@ -44,7 +44,7 @@ public class DeckShoe {
         //Card hand = new Card();
         for(int i = 0; i < decks.length; i++) {
             if(decks[i] != null) {
-                sense[i] = decks[i].dealTopCard();
+                sense[0] = decks[i].dealTopCard();
 //                hand = decks[i].dealTopCard();
 //                return hand;
                 //return sense[i];
@@ -70,7 +70,7 @@ public class DeckShoe {
 //            return sense[j];
 //        }
 //
-        return sense[decks.length-1];
+        return sense[0];
 
     }
 
