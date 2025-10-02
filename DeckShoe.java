@@ -60,6 +60,8 @@ public class DeckShoe {
             //return sense[i];
 
         }
+
+        return hand;
     }
 
     //Reshuffles all of the decks.
