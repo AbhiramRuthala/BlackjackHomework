@@ -2,6 +2,11 @@
  * A stack of more than one deck of cards used in a casino game
  *
  */
+// Name: Abhiram Ruthala
+// Computing ID: kas4kj@virginia.edu
+// Homework Name: Homework 4 - BlackJack
+// Resources used: ChatGPT 5 for debugging
+
 public class DeckShoe {
 
     //An array of decks of cards that comprise this multi-deck.
