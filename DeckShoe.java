@@ -60,7 +60,7 @@ public class DeckShoe {
             //return sense[i];
 
         }
-
+    }
 
     //Reshuffles all of the decks.
     protected void restoreDecks() {
