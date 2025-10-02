@@ -71,7 +71,7 @@ public class DeckShoe {
 //            return sense[j];
 //        }
 //
-        return dealTopCard();
+        return sense;
 
     }
 
