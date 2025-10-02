@@ -41,11 +41,14 @@ public class DeckShoe {
     //to reshuffle all the decks and start over again
     public Card dealTopCard() {
         Card sense = new Card();
+ 
         //Card sense  = new Card();
         //Card hand = new Card();
         for(int i = 0; i < decks.length; i++) {
             if(decks[i] != null) {
+                int cardsleft = decks[i].cardsLeft();
                 sense = decks[i].dealTopCard();
+                cardsleft = cardsleft - 1;
 //                hand = decks[i].dealTopCard();
 //                return hand;
                 //return sense[i];
@@ -74,6 +77,7 @@ public class DeckShoe {
         return sense;
 
     }
+
 
     //Reshuffles all of the decks.
     protected void restoreDecks() {
