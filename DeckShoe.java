@@ -36,9 +36,12 @@ public class DeckShoe {
     //to reshuffle all the decks and start over again
     public Card dealTopCard() {
         Card[] sense = new Card[decks.length];
+        Card hand = new Card();
         for(int i = 0; i < decks.length; i++) {
             if(decks[i] != null) {
                 sense[i] = decks[i].dealTopCard();
+                hand = decks[i].dealTopCard();
+                return hand;
                 //return sense[i];
             } else {
                 sense[i] = null;
@@ -53,17 +56,10 @@ public class DeckShoe {
 
             //return sense;
 
+            //return hand;
             //return sense[i];
 
         }
-
-//        for(int j = 0; j < decks.length; j++) {
-//            return sense[j];
-//        }
-//
-        return sense[0];
-
-    }
 
 
     //Reshuffles all of the decks.
