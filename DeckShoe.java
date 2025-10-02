@@ -75,14 +75,6 @@ public class DeckShoe {
 
     }
 
-//        for(int j = 0; j < decks.length; j++) {
-//            return sense[j];
-//        }
-//
-        return sense[0];
-
-    }
-
     //Reshuffles all of the decks.
     protected void restoreDecks() {
         Deck newDeck = new Deck();
